@@ -1,0 +1,6 @@
+*.tar
+*.tar.gz
+*.pb
+bottlenecks/
+images/
+tf_files/training_summaries
