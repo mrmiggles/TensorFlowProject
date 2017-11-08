@@ -123,6 +123,7 @@ if __name__ == "__main__":
   output_operation = graph.get_operation_by_name(output_name);
 
   with tf.Session(graph=graph) as sess:
+    sess.graph.get
     results = sess.run(output_operation.outputs[0],
                       {input_operation.outputs[0]: t})
   results = np.squeeze(results)
